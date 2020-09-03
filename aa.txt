@@ -1,0 +1,14 @@
+
+@Tag0
+Scenario: Network is enable then login [90m# src/main/resources/feature/ff.feature:4[0m
+  [32mGiven [0m[32msetupDevice [0m[32m[1m"Android"[0m          [90m# step_definitions.DemoStep.setupDevice(java.lang.String)[0m
+  [32mWhen [0m[32mclick([0m[32m[1m122[0m[32m, [0m[32m[1m220[0m[32m)[0m                 [90m# step_definitions.Demo2Step.click(int,int)[0m
+  [31mWhen [0m[31mclickElement([0m[31m[1m"fff"[0m[31m)[0m             [90m# step_definitions.Demo2Step.clickElement(java.lang.String)[0m
+      [31mjava.lang.AssertionError: expected:<1> but was:<2>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at step_definitions.Demo2Step.clickElement(Demo2Step.java:15)
+	at ✽.clickElement("fff")(file:///D:/workspace/BddTest/src/main/resources/feature/ff.feature:7)
+[0m
